@@ -1,6 +1,8 @@
 # stopwatch
+https://newelhan.github.io/stopwatch/
+
 Stopwatch website created using HTML, CSS, and JavaScript
-Created at August 2023
+Created on August 2023, updates are to come
 
 - First "independent" project
 - Some JavaScript problems were solved using ChatGPT
