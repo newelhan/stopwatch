@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p class="stopwatch-title">Stopwatch Project</p>
+
+    <div class="main-card">
+
+      <div class="main-body">
+        <div class="stopwatch">
+          <div class="stopwatch-border">
+            <div class="stopwatch-time">0.00s</div>
+          </div>
+      </div>
+
+        <div class="main-buttons">
+          <button class="start-button js-start-stop">START</button>
+          <button class="lap-button js-lap">LAP</button> 
+          <button class="reset-button js-reset">RESET</button>
+        </div>
+
+      </div>
+
+      <div class="time-log-container">
+        <div class="time-log">
+          <p>No.</p>
+          <p>Overall Time</p>
+          <p>Lap Time</p>
+          <p>Delete</p>
+        </div>
+        <div class="js-time-logs"></div>
+      </div>
+    </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

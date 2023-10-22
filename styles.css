@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+  color: white;
+  overflow-y: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stopwatch-title, .stopwatch-time {
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+}
+
+.stopwatch-title {
+  margin-bottom: 35px;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.stopwatch-border {
+  border: rgb(224, 224, 224) solid 2px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100px;
+}
+
+.js-border-active {
+  border-color: rgb(0, 255, 0);
+  box-shadow: 0px 0px 5px rgb(0, 255, 0);
+  transition: 0.15s;
+}
+
+.js-border-inactive {
+  border-color: white;
+  transition: 0.15s;
+}
+
+.js-border-lap {
+  box-shadow: 0px 0px 10px rgb(0, 191, 255);
+  border-color: rgb(0, 191, 255);
+  transition: 0.15s;
+}
+
+.js-border-reset {
+  box-shadow: 0px 0px 10px rgb(255, 11, 11);
+  border-color: rgb(255, 11, 11);
+  transition: 0.15s;
+}
+
+.stopwatch-time {
+  font-size: 70px;
+}
+
+.main-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start-button, .lap-button, .reset-button, .delete-lap-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: white solid 1px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  box-shadow: 0px 0px 10px rgb(0, 255, 0);
+  border-color: rgb(0, 255, 0);
+  transition: 0.15s;
+}
+
+.start-button:active {
+  box-shadow: 0px 0px 5px rgb(0, 156, 0);
+  border-color: rgb(0, 156, 0);
+  transition: 0.15s;
+}
+
+.lap-button:hover {
+  box-shadow: 0px 0px 10px rgb(0, 191, 255);
+  border-color: rgb(0, 191, 255);
+  transition: 0.15s;
+}
+
+.lap-button:active {
+  box-shadow: 0px 0px 5px rgb(0, 134, 178);
+  border-color: rgb(0, 134, 178);
+  transition: 0.15s;
+}
+
+.reset-button:hover, .delete-lap-button:hover {
+  box-shadow: 0px 0px 10px rgb(255, 33, 33);
+  border-color: rgb(255, 33, 33);
+  transition: 0.15s;
+}
+
+.reset-button:active, .delete-lap-button:active {
+  box-shadow: 0px 0px 5px rgb(174, 0, 0);
+  border-color: rgb(174, 0, 0);
+  transition: 0.15s;
+}
+
+.time-log-container {
+  width: 470px;
+  height: 420px;
+  border: white solid 2px;
+  border-radius: 5%;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.time-log {
+  display: grid;
+  color: white;
+  margin-left: 10px;
+  grid-template-columns: 80px 160px 130px 90px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 0
+}
+
+.delete-lap-button {
+  padding: 4px 15px;
+  cursor: pointer;
+}
